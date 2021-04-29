@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Wpisz liczbę</h1>
+  
+    <form method="post">
+        <label asp-for="Fizzbuzz.liczba">Liczba</label>
+        <input asp-for="Fizzbuzz.liczba" type="text" class="form-control" required/>
+        <button type="submit">Zatwierdź</button>
+    </form>
+
+</div>
